@@ -1,0 +1,608 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 492
+License: Customer
+
+Current time: 	Sat May 04 23:06:11 GST 2024
+Time zone: 	Gulf Standard Time (Asia/Muscat)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1093x614
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 2 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	E:/Vivado/2018.2/tps/win64/jre
+Java executable location: 	E:/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	donia
+User home directory: C:/Users/donia
+User working directory: E:/projects/micro/Micro
+User country: 	AE
+User language: 	en
+User locale: 	en_AE
+
+RDI_BASEROOT: E:/Vivado
+HDI_APPROOT: E:/Vivado/2018.2
+RDI_DATADIR: E:/Vivado/2018.2/data
+RDI_BINDIR: E:/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/donia/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/donia/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/donia/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	E:/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	E:/projects/micro/Micro/vivado.log
+Vivado journal file location: 	E:/projects/micro/Micro/vivado.jou
+Engine tmp dir: 	E:/projects/micro/Micro/.Xil/Vivado-492-DESKTOP-57V1PPI
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: E:/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: E:/Vivado/2018.2
+XILINX_SDK: E:/SDK/2018.2
+XILINX_VIVADO: E:/Vivado/2018.2
+XILINX_VIVADO_HLS: E:/Vivado/2018.2
+XILINX_VIVADO_SDK: E:\SDK
+
+
+GUI allocated memory:	191 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 461 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 52 MB (+52062kb) [00:00:21]
+// [Engine Memory]: 449 MB (+319572kb) [00:00:21]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 56 MB (+1743kb) [00:00:24]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: E:\projects\micro\Micro\Micro.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 5974ms to process. Increasing delay to 4000 ms.
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+// Tcl Message: open_project E:/projects/micro/Micro/Micro.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 506 MB. GUI used memory: 31 MB. Current time: 5/4/24 11:06:26 PM GST
+// [Engine Memory]: 518 MB (+48695kb) [00:00:42]
+selectButton("RDIResource.ProgressDialog_ARE_YOU_SURE_YOU_WANT_TO_CANCEL_Yes", "Yes"); // JButton (A, G)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: PROJECT_CLOSE
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// Tcl Message: INFO: [Common 17-344] 'open_project' was cancelled 
+dismissDialog("Open Project"); // bx (ck)
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "E:/projects/micro/Micro/Micro.xpr", 0); // q (O, ck)
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "E:/projects/micro/Micro/Micro.xpr", 0, false, false, false, false, true); // q (O, ck) - Double Click
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: E:/projects/micro/Micro/Micro.xpr. Version: Vivado v2018.2 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 559 MB. GUI used memory: 31 MB. Current time: 5/4/24 11:06:36 PM GST
+// [Engine Memory]: 559 MB (+15787kb) [00:00:51]
+// Tcl Message: open_project E:/projects/micro/Micro/Micro.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 594 MB (+6846kb) [00:01:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 607 MB. GUI used memory: 36 MB. Current time: 5/4/24 11:07:13 PM GST
+// Project name: Micro; location: E:/projects/micro/Micro; part: xc7vx485tffg1157-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 812.602 ; gain = 54.184 
+// Elapsed time: 40 seconds
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 627ms to process. Increasing delay to 3000 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 60 MB (+687kb) [00:01:52]
+// Elapsed time: 45 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw (aE, ck)
+// PAPropertyPanels.initPanels (common_bus_selection.v) elapsed time: 0.5s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, common_bus_selection (common_bus_selection.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, common_bus_selection (common_bus_selection.v), genblk1[1].mux3x1 : mux3x1 (mux.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [Engine Memory]: 624 MB (+720kb) [00:02:21]
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("common_bus_selection.v", 110, 280); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 63 MB (+554kb) [00:02:47]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 69 MB (+2293kb) [00:02:50]
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 73 MB (+1032kb) [00:03:24]
+// Elapsed time: 58 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, common_bus_selection (common_bus_selection.v), genblk1[3].mux3x1 : mux3x1 (mux.v)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, common_bus_selection (common_bus_selection.v), genblk1[3].mux3x1 : mux3x1 (mux.v)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("mux.v", 0, 175); // ce (w, ck)
+selectCodeEditor("mux.v", 86, 261); // ce (w, ck)
+selectCodeEditor("mux.v", 83, 282); // ce (w, ck)
+typeControlKey((HResource) null, "mux.v", 'v'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "common_bus_selection.v", 1); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 626 MB. GUI used memory: 39 MB. Current time: 5/4/24 11:09:45 PM GST
+selectCodeEditor("common_bus_selection.v", 97, 295); // ce (w, ck)
+typeControlKey((HResource) null, "common_bus_selection.v", 'v'); // ce (w, ck)
+selectCodeEditor("common_bus_selection.v", 195, 18); // ce (w, ck)
+selectCodeEditor("common_bus_selection.v", 196, 8); // ce (w, ck)
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 31); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 32); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 33); // B (D, ck)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 14 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "common_bus_selection_tb"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 20 seconds
+dismissDialog("Add Sources"); // c (ck)
+// TclEventType: FILE_SET_CHANGE
+// bx (ck):  Add Simulation Sources  : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: close [ open E:/projects/micro/Micro/Micro.srcs/sim_1/new/common_bus_selection_tb.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 E:/projects/micro/Micro/Micro.srcs/sim_1/new/common_bus_selection_tb.v 
+// I (ck): Define Module: addNotify
+dismissDialog("Add Simulation Sources"); // bx (ck)
+// [GUI Memory]: 77 MB (+120kb) [00:05:06]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// [GUI Memory]: 83 MB (+1906kb) [00:05:15]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, common_bus_selection_tb (common_bus_selection_tb.v)]", 52, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, common_bus_selection_tb (common_bus_selection_tb.v)]", 52, false, false, false, false, false, true); // B (D, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 646 MB. GUI used memory: 42 MB. Current time: 5/4/24 11:11:10 PM GST
+selectCodeEditor("common_bus_selection_tb.v", 3, 274); // ce (w, ck)
+typeControlKey((HResource) null, "common_bus_selection_tb.v", 'v'); // ce (w, ck)
+selectCodeEditor("common_bus_selection_tb.v", 167, 107); // ce (w, ck)
+selectCodeEditor("common_bus_selection_tb.v", 195, 58); // ce (w, ck)
+selectCodeEditor("common_bus_selection_tb.v", 140, 99); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, common_bus_selection_tb (common_bus_selection_tb.v)]", 52, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top common_bus_selection_tb [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 88 MB (+1057kb) [00:05:55]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// e (ck):  Run Simulation : addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/projects/micro/Micro/Micro.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: INFO: [SIM-utils-54] Inspecting design source files for 'common_bus_selection_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/projects/micro/Micro/Micro.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj common_bus_selection_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing Verilog file "E:/projects/micro/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module common_bus_selection INFO: [VRFC 10-2263] Analyzing Verilog file "E:/projects/micro/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module mux3x1 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/projects/micro/Micro/Micro.srcs/sim_1/new/common_bus_selection_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module common_bus_selection_tb 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 847.105 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '5' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/projects/micro/Micro/Micro.sim/sim_1/behav/xsim' 
+// Tcl Message: Vivado Simulator 2018.2 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot common_bus_selection_tb_behav xil_defaultlib.common_bus_selection_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration Starting simulation data flow analysis Completed simulation data flow analysis Time Resolution for simulation is 1ps Compiling module xil_defaultlib.mux3x1 Compiling module xil_defaultlib.common_bus_selection_default Compiling module xil_defaultlib.common_bus_selection_tb Compiling module xil_defaultlib.glbl 
+// Tcl Message: Built simulation snapshot common_bus_selection_tb_behav 
+// Tcl Message:  ****** Webtalk v2018.2 (64-bit)   **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018   **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source E:/projects/micro/Micro/Micro.sim/sim_1/behav/xsim/xsim.dir/common_bus_selection_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 53.961 ; gain = 1.281 INFO: [Common 17-206] Exiting Webtalk at Sat May  4 23:12:18 2024... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 847.105 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/projects/micro/Micro/Micro.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "common_bus_selection_tb_behav -key {Behavioral:sim_1:Functional:common_bus_selection_tb} -tclbatch {common_bus_selection_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source common_bus_selection_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 861.375 ; gain = 14.270 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'common_bus_selection_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:38 . Memory (MB): peak = 861.410 ; gain = 14.305 
+// 'd' command handler elapsed time: 40 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 646 MB. GUI used memory: 46 MB. Current time: 5/4/24 11:12:24 PM GST
+// Elapsed time: 39 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 10 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B (f, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 646 MB. GUI used memory: 46 MB. Current time: 5/4/24 11:12:40 PM GST
+selectButton(RDIResource.GraphicalView_ZOOM_IN, "Waveform Viewer_zoom_in"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 646 MB. GUI used memory: 46 MB. Current time: 5/4/24 11:12:43 PM GST
+// TclEventType: WAVEFORM_CLOSE_WCFG
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // w
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, common_bus_selection (common_bus_selection.v)]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, timing (timing.v)]", 3); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, timing (timing.v)]", 3); // B (D, ck)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, test.v]", 20, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, test.v]", 20, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, test.v]", 20, false, false, false, false, false, true); // B (D, ck) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, CommonBus.v]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, CommonBus.v]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, CommonBus.v]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, CommonBus.v]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  E:/projects/micro/Micro/Micro.srcs/sources_1/new/CommonBus.v] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, commn_bus_control.v]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, commn_bus_control.v]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, commn_bus_control.v]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, commn_bus_control.v]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, commn_bus_control.v]", 2, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  E:/projects/micro/Micro/Micro.srcs/sources_1/new/commn_bus_control.v] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, test.v]", 2, false); // B (D, ck)
+// [GUI Memory]: 92 MB (+249kb) [00:07:59]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, test.v]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, test.v]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("test.v", 57, 121); // ce (w, ck)
+selectCodeEditor("test.v", 77, 275); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 255 seconds
+selectCodeEditor("test.v", 147, 139); // ce (w, ck)
+selectCodeEditor("test.v", 147, 139, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("test.v", 147, 139); // ce (w, ck)
+typeControlKey((HResource) null, "test.v", 'c'); // ce (w, ck)
+selectCodeEditor("test.v", 135, 154); // ce (w, ck)
+selectCodeEditor("test.v", 117, 164); // ce (w, ck)
+selectCodeEditor("test.v", 117, 164); // ce (w, ck)
+typeControlKey((HResource) null, "test.v", 'v'); // ce (w, ck)
+selectCodeEditor("test.v", 44, 159); // ce (w, ck)
+selectCodeEditor("test.v", 128, 155); // ce (w, ck)
+selectCodeEditor("test.v", 201, 163); // ce (w, ck)
+// Elapsed time: 19 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 11 seconds
+selectCodeEditor("test.v", 229, 159); // ce (w, ck)
+selectCodeEditor("test.v", 229, 159, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("test.v", 259, 132); // ce (w, ck)
+selectCodeEditor("test.v", 227, 129); // ce (w, ck)
+typeControlKey((HResource) null, "test.v", 'c'); // ce (w, ck)
+selectCodeEditor("test.v", 237, 166); // ce (w, ck)
+typeControlKey((HResource) null, "test.v", 'v'); // ce (w, ck)
+selectCodeEditor("test.v", 229, 164); // ce (w, ck)
+selectCodeEditor("test.v", 335, 160); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("test.v", 137, 63); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("test.v", 253, 114); // ce (w, ck)
+selectCodeEditor("test.v", 0, 59); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("test.v", 85, 68); // ce (w, ck)
+selectCodeEditor("test.v", 84, 67); // ce (w, ck)
+selectCodeEditor("test.v", 183, 59); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("test.v", 85, 61); // ce (w, ck)
+selectCodeEditor("test.v", 100, 36); // ce (w, ck)
+selectCodeEditor("test.v", 2, 79); // ce (w, ck)
+selectCodeEditor("test.v", 82, 76); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("test.v", 127, 59); // ce (w, ck)
+// Elapsed time: 465 seconds
+selectCodeEditor("test.v", 180, 41); // ce (w, ck)
+// Elapsed time: 38 seconds
+selectCodeEditor("test.v", 75, 82); // ce (w, ck)
+selectCodeEditor("test.v", 1, 95); // ce (w, ck)
+selectCodeEditor("test.v", 111, 75); // ce (w, ck)
+selectCodeEditor("test.v", 161, 274); // ce (w, ck)
+selectCodeEditor("test.v", 157, 267); // ce (w, ck)
+selectCodeEditor("test.v", 80, 75); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("test.v", 178, 47); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("test.v", 178, 47); // ce (w, ck)
+selectCodeEditor("test.v", 270, 42); // ce (w, ck)
+selectCodeEditor("test.v", 194, 41); // ce (w, ck)
+selectCodeEditor("test.v", 260, 40); // ce (w, ck)
+typeControlKey((HResource) null, "test.v", 'c'); // ce (w, ck)
+selectCodeEditor("test.v", 278, 40); // ce (w, ck)
+typeControlKey((HResource) null, "test.v", 'v'); // ce (w, ck)
+selectCodeEditor("test.v", 278, 40); // ce (w, ck)
+selectCodeEditor("test.v", 167, 42); // ce (w, ck)
+selectCodeEditor("test.v", 206, 55); // ce (w, ck)
+// Elapsed time: 55 seconds
+selectCodeEditor("test.v", 14, 95); // ce (w, ck)
+selectCodeEditor("test.v", 14, 95, false, false, false, false, true); // ce (w, ck) - Double Click
+// [GUI Memory]: 97 MB (+73kb) [00:29:26]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2532 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 646 MB. GUI used memory: 48 MB. Current time: 5/4/24 11:42:45 PM GST
+// Elapsed time: 1833 seconds
+selectCodeEditor("test.v", 2, 25); // ce (w, ck)
+selectCodeEditor("test.v", 11, 111); // ce (w, ck)
+selectCodeEditor("test.v", 128, 271); // ce (w, ck)
+selectCodeEditor("test.v", 5, 161); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("test.v", 172, 199); // ce (w, ck)
+selectCodeEditor("test.v", 37, 25); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 314ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 61 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "IR_decoder"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 72 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open E:/projects/micro/Micro/Micro.srcs/sources_1/new/IR_decoder.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bx (ck):  Add Sources  : addNotify
+// Tcl Message: add_files E:/projects/micro/Micro/Micro.srcs/sources_1/new/IR_decoder.v 
+// I (ck): Define Module: addNotify
+dismissDialog("Add Sources"); // bx (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// TclEventType: DG_GRAPH_GENERATED
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// TclEventType: DG_ANALYSIS_MSG_RESET
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_decoder (IR_decoder.v)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_decoder (IR_decoder.v)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, timing (timing.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, timing (timing.v)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("timing.v", 18, 252); // ce (w, ck)
+selectCodeEditor("timing.v", 3, 51); // ce (w, ck)
+selectCodeEditor("timing.v", 9, 39); // ce (w, ck)
+selectCodeEditor("timing.v", 0, 27); // ce (w, ck)
+typeControlKey((HResource) null, "timing.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IR_decoder.v", 0); // k (j, ck)
+selectCodeEditor("IR_decoder.v", 93, 270); // ce (w, ck)
+typeControlKey((HResource) null, "IR_decoder.v", 'v'); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 121, 63); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 71, 59); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 120, 75); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 89, 63); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timing.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IR_decoder.v", 0); // k (j, ck)
+selectCodeEditor("IR_decoder.v", 115, 83); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 81, 59); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 105, 76); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 82, 185); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 129, 129); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 45, 111); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 69, 116); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 69, 116, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("IR_decoder.v", 120, 181); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 120, 181, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("IR_decoder.v", 113, 178); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR (IR.v)]", 7, false); // B (D, ck)
+// k (ck): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ck)
+dismissDialog("Text Changed"); // k (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timing.v", 1); // k (j, ck)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, ck)
+selectCodeEditor("timing.v", 45, 61); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// k (ck): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ck)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3x8 (3x8decoder.v)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder3x8 (3x8decoder.v)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR (IR.v)]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR (IR.v)]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR (IR.v)]", 7, false); // B (D, ck)
+// Elapsed time: 138 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "3x8decoder.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IR_decoder.v", 0); // k (j, ck)
+selectCodeEditor("IR_decoder.v", 184, 83); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IR.v", 2); // k (j, ck)
+selectCodeEditor("IR.v", 154, 83); // ce (w, ck)
+selectCodeEditor("IR.v", 154, 83, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "IR.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "3x8decoder.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IR_decoder.v", 0); // k (j, ck)
+selectCodeEditor("IR_decoder.v", 79, 127); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 79, 127, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "IR_decoder.v", 'v'); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 139, 62); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 139, 62, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "IR_decoder.v", 'c'); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 157, 132); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 157, 132, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "IR_decoder.v", 'v'); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 133, 131); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("IR_decoder.v", 137, 130); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 133, 127); // ce (w, ck)
+typeControlKey((HResource) null, "IR_decoder.v", 'c'); // ce (w, ck)
+selectCodeEditor("IR_decoder.v", 61, 131); // ce (w, ck)
+typeControlKey((HResource) null, "IR_decoder.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "IR_decoder.v", 'v'); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("IR_decoder.v", 82, 256); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_decoder (IR_decoder.v)]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR_decoder (IR_decoder.v)]", 8, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  E:/projects/micro/Micro/Micro.srcs/sources_1/new/IR_decoder.v] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// k (ck): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ck)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// HMemoryUtils.trashcanNow. Engine heap size: 646 MB. GUI used memory: 48 MB. Current time: 5/5/24 12:12:46 AM GST
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking 2475ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 646 MB. GUI used memory: 48 MB. Current time: 5/5/24 12:42:46 AM GST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2517 ms. Increasing delay to 4000 ms.

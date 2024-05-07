@@ -1,0 +1,178 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 12692
+License: Customer
+
+Current time: 	Wed May 01 12:20:17 GST 2024
+Time zone: 	Gulf Standard Time (Asia/Muscat)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 2
+
+Screen size: 1093x614
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 2 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	E:/Vivado/2018.2/tps/win64/jre
+Java executable location: 	E:/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	donia
+User home directory: C:/Users/donia
+User working directory: E:/projects/micro/Micro
+User country: 	AE
+User language: 	en
+User locale: 	en_AE
+
+RDI_BASEROOT: E:/Vivado
+HDI_APPROOT: E:/Vivado/2018.2
+RDI_DATADIR: E:/Vivado/2018.2/data
+RDI_BINDIR: E:/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/donia/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/donia/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/donia/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	E:/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	E:/projects/micro/Micro/vivado.log
+Vivado journal file location: 	E:/projects/micro/Micro/vivado.jou
+Engine tmp dir: 	E:/projects/micro/Micro/.Xil/Vivado-12692-DESKTOP-57V1PPI
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: E:/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: E:/Vivado/2018.2
+XILINX_SDK: E:/SDK/2018.2
+XILINX_VIVADO: E:/Vivado/2018.2
+XILINX_VIVADO_HLS: E:/Vivado/2018.2
+XILINX_VIVADO_SDK: E:\SDK
+
+
+GUI allocated memory:	217 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 450 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 52 MB (+51757kb) [00:00:46]
+// [Engine Memory]: 450 MB (+320788kb) [00:00:46]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 56 MB (+1290kb) [00:00:51]
+// bx (ck):  Open Project : addNotify
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 612ms to process. Increasing delay to 4000 ms.
+// Opening Vivado Project: E:\projects\micro\Micro\Micro.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 450 MB. GUI used memory: 33 MB. Current time: 5/1/24 12:20:20 PM GST
+// Tcl Message: open_project E:/projects/micro/Micro/Micro.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project E:/projects/micro/Micro/Micro.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// Project name: Micro; location: E:/projects/micro/Micro; part: xc7vx485tffg1157-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:01:06 . Memory (MB): peak = 832.805 ; gain = 119.176 
+dismissDialog("Open Project"); // bx (ck)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 498ms to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 2751ms to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 225ms to process. Increasing delay to 2000 ms.
+// [Engine Memory]: 475 MB (+1784kb) [00:02:20]
+// D (ck): Invalid Top Module: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 475 MB. GUI used memory: 36 MB. Current time: 5/1/24 12:21:51 PM GST
+// Elapsed time: 39 seconds
+dismissDialog("Invalid Top Module"); // D (ck)
+floatView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_PROJECT_SUMMARY: Project Summary: float view
+maximizeFrame(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // aw (aE, aG)
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "test"); // h (Q, aG)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// C (ck): Settings: addNotify
+// 'dx' command handler elapsed time: 6 seconds
+// [Engine Memory]: 501 MB (+2503kb) [00:02:57]
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// [GUI Memory]: 62 MB (+3896kb) [00:02:57]
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "test"); // h (Q, aG)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// HMemoryUtils.trashcanNow. Engine heap size: 510 MB. GUI used memory: 51 MB. Current time: 5/1/24 12:22:24 PM GST
+// Elapsed time: 25 seconds
+dismissDialog("Settings"); // C (ck)
+// [GUI Memory]: 69 MB (+3613kb) [00:03:24]
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw (aE, ck)
+// PAPropertyPanels.initPanels (test.v) elapsed time: 0.4s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, control (test.v)]", 4, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, control (test.v)]", 4, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [Engine Memory]: 528 MB (+2636kb) [00:03:36]
+// HMemoryUtils.trashcanNow. Engine heap size: 528 MB. GUI used memory: 52 MB. Current time: 5/1/24 12:23:05 PM GST
+// Elapsed time: 16 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw (aE, ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, common_bus_control (common_bus_control.v)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, common_bus_control (common_bus_control.v)]", 12, false, false, false, false, false, true); // B (D, ck) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// [GUI Memory]: 73 MB (+1374kb) [00:04:20]
+// Elapsed time: 18 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, common_bus_selection (common_bus_selection.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, common_bus_selection (common_bus_selection.v), genblk1[2].mux3x1 : mux3x1 (mux.v)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// [GUI Memory]: 78 MB (+541kb) [00:05:06]
+unMaximizeFrame(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // aw (aE, aG)
+maximizeFrame(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // aw (aE, aG)
+// PAResourceOtoP.PAViews_PROJECT_SUMMARY: Project Summary: dock view
+maximizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // aw (aE, ck)
+// [GUI Memory]: 86 MB (+5176kb) [00:05:18]
+floatView(RDIResource.RDIViews_PROPERTIES, "Properties"); // aw (aE, ck)
+// RDIResource.RDIViews_PROPERTIES: Source File Properties: float view
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, common_bus_selection (common_bus_selection.v), genblk1[0].mux3x1 : mux3x1 (mux.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, common_bus_selection (common_bus_selection.v), genblk1[0].mux3x1 : mux3x1 (mux.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, common_bus_selection (common_bus_selection.v), genblk1[1].mux3x1 : mux3x1 (mux.v)]", 5, false); // B (D, ck)
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_SOURCES: Sources: close view
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "common_bus_control.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "common_bus_selection.v", 2); // k (j, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("common_bus_selection.v", 36, 91); // ce (w, ck)
+// [GUI Memory]: 93 MB (+1970kb) [00:05:59]
+// Elapsed time: 22 seconds
+selectCodeEditor("common_bus_selection.v", 119, 59); // ce (w, ck)
+selectCodeEditor("common_bus_selection.v", 131, 76); // ce (w, ck)
+selectCodeEditor("common_bus_selection.v", 112, 98); // ce (w, ck)
+selectCodeEditor("common_bus_selection.v", 110, 115); // ce (w, ck)
+selectCodeEditor("common_bus_selection.v", 111, 127); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("common_bus_selection.v", 111, 142); // ce (w, ck)
+selectCodeEditor("common_bus_selection.v", 110, 160); // ce (w, ck)
+selectCodeEditor("common_bus_selection.v", 142, 177); // ce (w, ck)
+selectCodeEditor("common_bus_selection.v", 115, 199); // ce (w, ck)
+selectCodeEditor("common_bus_selection.v", 177, 215); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("common_bus_selection.v", 33, 23); // ce (w, ck)
+// Elapsed time: 38 seconds
+selectCodeEditor("common_bus_selection.v", 459, 63); // ce (w, ck)

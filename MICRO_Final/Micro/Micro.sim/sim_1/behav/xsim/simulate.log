@@ -1,0 +1,13 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Performing XOR operation
+Performing XOR operation :8569
+Performing ADD operation
+Performing ADD operation :8569
+Performing LDA operation
+Performing LDA operation :8569
+Performing MULL operation
+Performing MULL operation :8569
+Performing INP operation
+Performing INP operation :8569
+$finish called at time : 60 ns : File "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/ALU_tb.v" Line 95

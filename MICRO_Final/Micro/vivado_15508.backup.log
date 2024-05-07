@@ -1,0 +1,1862 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon May  6 20:04:40 2024
+# Process ID: 15508
+# Current directory: D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15692 D:\Data second electric 2020-2021\second_electric sem_2\micro\MICRO_Final\Micro\Micro.xpr
+# Log file: D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/vivado.log
+# Journal file: D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.xpr}
+INFO: [Project 1-313] Project file moved from 'E:/projects/micro/Micro' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:46 . Memory (MB): peak = 789.512 ; gain = 117.559
+update_compile_order -fileset sources_1
+close [ open {D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v} w ]
+add_files {{D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/control_tb.v} w ]
+add_files -fileset sim_1 {{D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/control_tb.v}}
+update_compile_order -fileset sim_1
+set_property top control_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'control_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj control_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 827.988 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '13' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot control_tb_behav xil_defaultlib.control_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.control_tb
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 827.988 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:26 . Memory (MB): peak = 827.988 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'control_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj control_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot control_tb_behav xil_defaultlib.control_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.control_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot control_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Data -notrace
+couldn't read file "D:/Data": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon May  6 21:07:27 2024...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 831.512 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "control_tb_behav -key {Behavioral:sim_1:Functional:control_tb} -tclbatch {control_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source control_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 864.852 ; gain = 28.180
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'control_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:36 . Memory (MB): peak = 864.852 ; gain = 33.340
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 864.852 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'control_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj control_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot control_tb_behav xil_defaultlib.control_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.control_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot control_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "control_tb_behav -key {Behavioral:sim_1:Functional:control_tb} -tclbatch {control_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source control_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time = 0 | PC_LD = 1 | PC_INR = x | PC_CLR = 1 | ...
+Time = 10000 | PC_LD = 1 | PC_INR = 1 | PC_CLR = 1 | ...
+Time = 20000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 30000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 40000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 50000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 60000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 70000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 80000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 90000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 100000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 110000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 120000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 130000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 140000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 150000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 160000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 170000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 180000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 190000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 200000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 210000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 220000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 230000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 240000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 250000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 260000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 270000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 280000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 290000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 300000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 310000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 320000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 330000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 340000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 350000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 360000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 370000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 380000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 390000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 400000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 410000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 420000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 430000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 440000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 450000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 460000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 470000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 480000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 490000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 500000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 510000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 520000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 530000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 540000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 550000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 560000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 570000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 580000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 590000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 600000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 610000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 620000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 630000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 640000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 650000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 660000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 670000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 680000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 690000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 700000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 710000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 720000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 730000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 740000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 750000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 760000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 770000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 780000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 790000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 800000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 810000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 820000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 830000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 840000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 850000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 860000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 870000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 880000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 890000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 900000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 910000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 920000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 930000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 940000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 950000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 960000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 970000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 980000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 990000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 1000000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'control_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 864.852 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'control_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj control_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot control_tb_behav xil_defaultlib.control_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:40]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:44]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.control_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot control_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 864.852 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "control_tb_behav -key {Behavioral:sim_1:Functional:control_tb} -tclbatch {control_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source control_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time = 0 | PC_LD = 1 | PC_INR = x | PC_CLR = 1 | ...
+Time = 10000 | PC_LD = 1 | PC_INR = 1 | PC_CLR = 1 | ...
+Time = 20000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 30000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 40000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 50000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 60000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 70000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 80000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 90000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 100000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 110000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 120000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 130000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 140000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 150000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 160000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 170000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 180000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 190000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 200000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 210000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 220000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 230000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 240000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 250000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 260000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 270000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 280000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 290000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 300000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 310000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 320000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 330000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 340000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 350000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 360000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 370000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 380000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 390000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 400000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 410000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 420000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 430000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 440000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 450000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 460000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 470000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 480000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 490000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 500000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 510000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 520000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 530000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 540000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 550000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 560000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 570000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 580000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 590000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 600000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 610000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 620000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 630000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 640000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 650000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 660000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 670000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 680000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 690000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 700000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 710000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 720000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 730000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 740000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 750000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 760000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 770000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 780000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 790000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 800000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 810000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 820000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 830000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 840000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 850000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 860000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 870000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 880000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 890000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 900000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 910000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 920000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 930000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 940000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 950000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 960000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 970000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 980000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 990000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 1000000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'control_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 864.852 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'control_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj control_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-2369] data object B is already declared [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:45]
+ERROR: [VRFC 10-1350] second declaration of B ignored [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:45]
+ERROR: [VRFC 10-2787] module control ignored due to previous errors [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'control_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj control_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot control_tb_behav xil_defaultlib.control_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:39]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.control_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot control_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "control_tb_behav -key {Behavioral:sim_1:Functional:control_tb} -tclbatch {control_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source control_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time = 0 | PC_LD = 1 | PC_INR = x | PC_CLR = 1 | ...
+Time = 10000 | PC_LD = 1 | PC_INR = 1 | PC_CLR = 1 | ...
+Time = 20000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 30000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 40000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 50000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 60000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 70000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 80000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 90000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 100000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 110000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 120000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 130000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 140000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 150000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 160000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 170000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 180000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 190000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 200000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 210000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 220000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 230000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 240000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 250000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 260000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 270000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 280000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 290000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 300000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 310000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 320000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 330000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 340000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 350000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 360000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 370000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 380000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 390000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 400000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 410000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 420000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 430000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 440000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 450000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 460000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 470000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 480000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 490000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 500000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 510000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 520000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 530000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 540000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 550000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 560000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 570000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 580000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 590000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 600000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 610000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 620000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 630000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 640000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 650000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 660000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 670000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 680000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 690000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 700000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 710000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 720000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 730000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 740000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 750000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 760000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 770000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 780000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 790000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 800000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 810000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 820000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 830000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 840000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 850000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 860000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 870000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 880000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 890000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 900000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 910000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 920000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 930000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 940000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 950000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 960000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 970000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 980000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 990000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 1000000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'control_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 870.117 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'control_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj control_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_tb
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 870.117 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot control_tb_behav xil_defaultlib.control_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:47]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:51]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.control_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot control_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 870.117 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "control_tb_behav -key {Behavioral:sim_1:Functional:control_tb} -tclbatch {control_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source control_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time = 0 | PC_LD = 1 | PC_INR = 0 | PC_CLR = 1 | ...
+Time = 10000 | PC_LD = 1 | PC_INR = 1 | PC_CLR = 1 | ...
+Time = 20000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 30000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 40000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 50000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 60000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 70000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 80000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 90000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 100000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 110000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 120000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 130000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 140000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 150000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 160000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 170000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 180000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 190000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 200000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 210000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 220000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 230000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 240000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 250000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 260000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 270000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 280000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 290000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 300000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 310000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 320000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 330000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 340000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 350000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 360000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 370000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 380000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 390000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 400000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 410000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 420000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 430000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 440000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 450000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 460000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 470000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 480000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 490000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 500000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 510000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 520000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 530000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 540000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 550000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 560000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 570000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 580000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 590000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 600000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 610000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 620000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 630000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 640000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 650000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 660000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 670000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 680000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 690000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 700000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 710000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 720000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 730000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 740000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 750000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 760000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 770000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 780000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 790000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 800000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 810000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 820000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 830000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 840000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 850000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 860000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 870000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 880000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 890000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 900000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 910000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 920000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 930000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 940000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 950000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 960000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 970000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 980000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 990000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+Time = 1000000 | PC_LD = 0 | PC_INR = 1 | PC_CLR = 0 | ...
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'control_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 870.117 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/Main_tb.v} w ]
+add_files -fileset sim_1 {{D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/Main_tb.v}}
+update_compile_order -fileset sim_1
+set_property top Main_Design [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top Main_Design [current_fileset]
+update_compile_order -fileset sources_1
+set_property top Main_Design_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/timing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timing
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 891.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '13' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port OUTR_LD on this module [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:108]
+ERROR: [VRFC 10-2063] Module <ALU> not found while processing module instance <alu> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:114]
+ERROR: [VRFC 10-2063] Module <flags> not found while processing module instance <e_flag> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:124]
+ERROR: [VRFC 10-2063] Module <RAM> not found while processing module instance <ram> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:134]
+ERROR: [VRFC 10-2063] Module <register_12bit> not found while processing module instance <ar> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:168]
+ERROR: [VRFC 10-2063] Module <SP> not found while processing module instance <sp> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:185]
+ERROR: [VRFC 10-2063] Module <register_16bit> not found while processing module instance <dr> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:194]
+ERROR: [VRFC 10-2063] Module <register_8bit> not found while processing module instance <inpr> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:228]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 891.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 891.480 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/timing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timing
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:84]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port outp [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/timing.v:33]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port T [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:98]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port LD [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:230]
+ERROR: [VRFC 10-426] cannot find port sc_output on this module [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:91]
+ERROR: [VRFC 10-426] cannot find port T on this module [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:92]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:213]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:214]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:126]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:251]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:41]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:45]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 892.770 ; gain = 0.195
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/timing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timing
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:84]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port outp [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/timing.v:34]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port T [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:106]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port LD [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:238]
+ERROR: [VRFC 10-426] cannot find port sc_output on this module [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:91]
+ERROR: [VRFC 10-426] cannot find port T on this module [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:92]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port outp [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:100]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:221]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:222]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:134]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:259]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:41]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:45]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 896.465 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 896.465 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/timing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timing
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port T on this module [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/Main_tb.v:49]
+ERROR: [VRFC 10-426] cannot find port sc_output on this module [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/Main_tb.v:48]
+ERROR: [VRFC 10-2063] Module <decoder3x8> not found while processing module instance <decoder_opcode> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:86]
+ERROR: [VRFC 10-2063] Module <timing> not found while processing module instance <sc_time> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:93]
+ERROR: [VRFC 10-2063] Module <SC> not found while processing module instance <sec_counter> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:97]
+ERROR: [VRFC 10-2063] Module <decoder4x16> not found while processing module instance <dec_timing> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:101]
+ERROR: [VRFC 10-2063] Module <control> not found while processing module instance <ctrl> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:107]
+ERROR: [VRFC 10-2063] Module <ALU> not found while processing module instance <alu_unit> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:125]
+ERROR: [VRFC 10-2063] Module <flags> not found while processing module instance <Eflag> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:135]
+ERROR: [VRFC 10-2063] Module <RAM> not found while processing module instance <ram_block> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:145]
+ERROR: [VRFC 10-2063] Module <register_12bit> not found while processing module instance <ar_reg> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:179]
+ERROR: [VRFC 10-2063] Module <SP> not found while processing module instance <sp_reg> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:196]
+ERROR: [VRFC 10-2063] Module <register_16bit> not found while processing module instance <dr_reg> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:205]
+ERROR: [VRFC 10-2063] Module <register_8bit> not found while processing module instance <inpr_reg> [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:239]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 896.465 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 896.465 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:87]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port outp [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:103]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port T [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:109]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port LD [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:241]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:224]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:225]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:137]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:262]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:41]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:45]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.Main_Design
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/Data -notrace
+couldn't read file "D:/Data": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue May  7 18:23:13 2024...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:32 . Memory (MB): peak = 896.465 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '32' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File D:Data second electric 2020-2021second_electric sem_2microMICRO_Finalmemory.txt referenced on D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 905.070 ; gain = 8.605
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:49 . Memory (MB): peak = 905.070 ; gain = 8.605
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 909.414 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_Testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/SC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/common_bus_control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/common_bus_selection_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/decoder3x8_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/deocder4x16_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/dff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dff
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/dff_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dff_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/encoder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/flags_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/mux_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module opcode
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/reg12_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/reg16_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/reg8_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/timing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timing
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/timing_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timing_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 909.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:87]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port outp [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:103]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port T [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:109]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port LD [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:241]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:224]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:225]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:137]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:262]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:41]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:45]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.Main_Design
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 909.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 909.414 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_Testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/SC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/common_bus_control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/common_bus_selection_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/decoder3x8_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/deocder4x16_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/dff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dff
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/dff_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dff_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/encoder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/flags_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/mux_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/opcode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module opcode
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/reg12_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/reg16_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/reg8_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/timing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timing
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/timing_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timing_tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 909.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:87]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port outp [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:103]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port T [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:109]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port LD [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:241]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:224]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:225]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:137]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:262]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:41]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:45]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.Main_Design
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 909.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File D:Data second electric 2020-2021second_electric sem_2microMICRO_Finalmemory.txt referenced on D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 909.414 ; gain = 0.000
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_16bit.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:87]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port outp [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:103]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port T [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:109]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port LD [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:241]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:224]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:225]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:137]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:262]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:41]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:45]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.Main_Design
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File D:Data second electric 2020-2021second_electric sem_2microMICRO_Finalmemory.txt referenced on D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 909.414 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:87]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port outp [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:103]
+WARNING: [VRFC 10-278] actual bit length 7 differs from formal bit length 16 for port T [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:109]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port LD [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:241]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:224]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:225]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:137]
+WARNING: [VRFC 10-1783] select index 16 into ALU_Odata is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/Main.v:262]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:41]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/control.v:45]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 909.836 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File D:Data second electric 2020-2021second_electric sem_2microMICRO_Finalmemory.txt referenced on D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+AR =    x, PC =    x, SP =    x, MEM =     z, DR =     x, AC =     z, IR =     x, TR =     x, OUTR =   x, E_flag = x, ALU_Odata =     z
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 910.598 ; gain = 0.762
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 910.598 ; gain = 0.762
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:01:48 . Memory (MB): peak = 911.480 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:01:48 . Memory (MB): peak = 911.480 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:04:04 . Memory (MB): peak = 911.480 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:04:04 . Memory (MB): peak = 911.480 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:04:48 . Memory (MB): peak = 911.480 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:04:48 . Memory (MB): peak = 911.480 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:03:00 . Memory (MB): peak = 911.480 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:03:00 . Memory (MB): peak = 911.480 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 911.480 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  7 19:18:28 2024...
