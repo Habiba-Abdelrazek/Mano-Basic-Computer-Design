@@ -1,0 +1,218 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May  9 13:27:59 2024
+# Process ID: 6360
+# Current directory: E:/project_11
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14936 E:\project_11\project_11.xpr
+# Log file: E:/project_11/vivado.log
+# Journal file: E:/project_11\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/project_11/project_11.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Eman/project_11' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 775.078 ; gain = 100.566
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/project_11/project_11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/project_11/project_11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project_11/project_11.srcs/sources_1/new/manocomputer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manocomputer
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:81]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:84]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:88]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:99]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:105]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:111]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:115]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:119]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:123]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project_11/project_11.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project_11/project_11.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 788.473 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '13' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/project_11/project_11.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f826bf47a9ac4a5d9408bc6fba97eff0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port OUTR [E:/project_11/project_11.srcs/sim_1/new/tb.v:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.manocomputer
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/project_11/project_11.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 53.992 ; gain = 1.242
+INFO: [Common 17-206] Exiting Webtalk at Thu May  9 13:31:27 2024...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:37 . Memory (MB): peak = 788.473 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '37' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/project_11/project_11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File D:dataofmemory.txt referenced on E:/project_11/project_11.srcs/sources_1/new/manocomputer.v at line 58 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 812.355 ; gain = 23.883
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:01:03 . Memory (MB): peak = 812.355 ; gain = 23.883
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 833.898 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/project_11/project_11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/project_11/project_11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project_11/project_11.srcs/sources_1/new/manocomputer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manocomputer
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:81]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:84]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:88]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:99]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:105]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:111]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:115]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:119]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/project_11/project_11.srcs/sources_1/new/manocomputer.v:123]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/project_11/project_11.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 833.898 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/project_11/project_11.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f826bf47a9ac4a5d9408bc6fba97eff0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port OUTR [E:/project_11/project_11.srcs/sim_1/new/tb.v:38]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.manocomputer
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 833.898 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/project_11/project_11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File E:Module_Codedataofmemory.txt referenced on E:/project_11/project_11.srcs/sources_1/new/manocomputer.v at line 58 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 835.059 ; gain = 1.160
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 835.059 ; gain = 1.160
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 837.145 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/project_11/project_11.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/project_11/project_11.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 837.145 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/project_11/project_11.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f826bf47a9ac4a5d9408bc6fba97eff0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port OUTR [E:/project_11/project_11.srcs/sim_1/new/tb.v:38]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 837.145 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/project_11/project_11.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File E:Module_Codedataofmemory.txt referenced on E:/project_11/project_11.srcs/sources_1/new/manocomputer.v at line 58 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 837.145 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 841.555 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 13:45:41 2024...

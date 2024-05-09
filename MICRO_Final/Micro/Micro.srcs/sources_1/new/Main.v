@@ -32,7 +32,7 @@ module Main_Design(
           output wire [7:0] OUTR,
           output wire E_flag,
           //output wire [7:0] D
-          output wire [15:0] ALU_Odata
+          output wire [16:0] ALU_Odata
     );
     
 //    wire [3:0] sc_output;
@@ -80,8 +80,46 @@ module Main_Design(
           INP, OUT, SKI, SKO, ION, IOF;
           
           // Common Bus
-          wire [15:0]
-          CB;
+          wire [15:0] CB_Odata;               // CB_Odata <--> REG_Idata
+          wire [2:0] CB_Sel;
+          wire [11:0] 
+          CB_Idata_AR_1, CB_Idata_PC_2;      // CB_Idata <--> REG_Odata
+          wire [15:0]                         
+          CB_Idata_DR_3, CB_Idata_AC_4, CB_Idata_IR_5, CB_Idata_TR_6,
+          CB_Idata_MEM_7;
+//          wire [7:0] encoder_in;                          // ?????????? I think it does'nt matter
+          
+          common_bus_control bus_ctrl (
+              .T(T),
+              .IR_y(D),
+              .R(R),
+              .J(IR[15]),
+              .IR_q(IR[11:0]),
+              .S(CB_Sel)
+//              .D(encoder_in)
+          );
+          
+          common_bus_selection bus_sel(
+              .Sel(CB_Sel),
+              .Common_bus(CB_Odata),
+              .None(0),
+              .AR(CB_Idata_AR_1),
+              .PC(CB_Idata_PC_2),
+              .DR(CB_Idata_DR_3),
+              .AC(CB_Idata_AC_4),
+              .IR(CB_Idata_IR_5),
+              .TR(CB_Idata_TR_6),
+              .Memory(CB_Idata_MEM_7)
+          );
+          
+//          assign AR_Idata = CB_Odata;
+//          assign PC_Idata = CB_Odata;
+//          assign AR_Idata = CB_Odata;
+//          assign AR_Idata = CB_Odata;
+//          assign AR_Idata = CB_Odata;
+//          assign AR_Idata = CB_Odata;
+//          assign AR_Idata = CB_Odata;
+          
           
           //OPcode
           decoder3x8 decoder_opcode (
@@ -126,7 +164,7 @@ module Main_Design(
           );
           
           //ALU
-          ALU alu_unit(
+          ALU alu_block(
               .dr(DR_Odata),
               .code(IR[15:12]),
               .inpr(INPR_Odata),
@@ -151,12 +189,14 @@ module Main_Design(
              .read(mem_read),
              .write(mem_write),
              .address(AR_Odata),
-             .data_in(MEM_Idata),
+             .data_in(CB_Odata),
              .data_out(IR_Idata)
              // MEM_Odata == IR_Idata
           );
           
-              /* if(~((D[3]&T[5]) | (D[4]&T[4]))) begin 
+          /*
+              wire ram_control = ~((D[3]&T[5]) | (D[4]&T[4]));
+               if(ram_control) begin 
                    RAM ram (
                             .clk(CLK),
                             .read(mem_read),
@@ -185,15 +225,17 @@ module Main_Design(
              .LD(AR_LD),
              .CLR(AR_CLR),
              .INR(AR_INR),
-             .reg_input(AR_Idata),
+//             .reg_input(AR_Idata),
+             .reg_input(CB_Odata),
              .reg_output(AR_Odata)
           );
-          register_12bit pc(
+          register_12bit pc_reg(
              .clk(CLK),
              .LD(PC_LD),
              .CLR(PC_CLR),
              .INR(PC_INR),
-             .reg_input(PC_Idata),
+//             .reg_input(PC_Idata),
+             .reg_input(CB_Odata),
              .reg_output(PC_Odata)
           );         
           //SP
@@ -211,31 +253,31 @@ module Main_Design(
              .LD(DR_LD),
              .CLR(DR_CLR),
              .INR(DR_INR),
-             .reg_input(DR_Idata),
+             .reg_input(CB_Odata),
              .reg_output(DR_Odata)
            );
-           register_16bit ac(
+           register_16bit ac_reg(
              .clk(CLK),
              .LD(AC_LD),
              .CLR(AC_CLR),
              .INR(AC_INR),
-             .reg_input(AC_Idata),
+             .reg_input(AC_Idata),                         ////////////// ???????????????? the out of ALU
              .reg_output(AC_Odata)
            );
-           register_16bit ir(
+           register_16bit ir_reg(
              .clk(CLK),
              .LD(IR_LD),
              .CLR(1),
              .INR(0),
-             .reg_input(IR_Idata),
+             .reg_input(CB_Odata),
              .reg_output(IR_Odata)
            );
-           register_16bit tr(
+           register_16bit tr_reg(
              .clk(CLK),
              .LD(TR_LD),
              .CLR(TR_CLR),
              .INR(TR_INR),
-             .reg_input(TR_Idata),
+             .reg_input(CB_Odata),
              .reg_output(TR_Odata)
            );
            
@@ -249,7 +291,7 @@ module Main_Design(
            register_8bit outr_reg(
              .clk(CLK),
              .LD(OUTR_LD),
-             .reg_input(OUTR_Idata),
+             .reg_input(CB_Odata),
              .reg_output(OUTR)
            );      
           

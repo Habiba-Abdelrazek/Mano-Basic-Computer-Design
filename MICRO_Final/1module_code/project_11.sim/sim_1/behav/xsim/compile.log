@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/1Module_Code/1module/project_11.srcs/sources_1/new/manocomputer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manocomputer
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/1Module_Code/1module/project_11.srcs/sources_1/new/manocomputer.v:81]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/1Module_Code/1module/project_11.srcs/sources_1/new/manocomputer.v:84]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/1Module_Code/1module/project_11.srcs/sources_1/new/manocomputer.v:88]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/1Module_Code/1module/project_11.srcs/sources_1/new/manocomputer.v:99]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/1Module_Code/1module/project_11.srcs/sources_1/new/manocomputer.v:105]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/1Module_Code/1module/project_11.srcs/sources_1/new/manocomputer.v:111]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/1Module_Code/1module/project_11.srcs/sources_1/new/manocomputer.v:115]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/1Module_Code/1module/project_11.srcs/sources_1/new/manocomputer.v:119]
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [E:/1Module_Code/1module/project_11.srcs/sources_1/new/manocomputer.v:123]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/1Module_Code/1module/project_11.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

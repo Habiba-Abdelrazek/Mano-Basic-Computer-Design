@@ -26,8 +26,8 @@ module common_bus_control(
   ////// input wire P ,r,
    input wire R, J , 
    input wire IR_q,
-   output [2:0] S,
-   inout [7:0] D
+   output [2:0] S,             // the output of the encoder or selection of the mux of common bus
+   inout [7:0] D              // output of the control signals or input data to the encoder 8*3
     );
   //////////assign  P = T[3]&IR_y[7]&J ;
   ////////////////assign  r = T[3]&IR_y[7]& ~J ;

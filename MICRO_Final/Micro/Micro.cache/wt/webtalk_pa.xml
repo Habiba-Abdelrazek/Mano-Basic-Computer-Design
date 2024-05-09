@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue May  7 22:48:12 2024">
+<application name="pa" timeStamp="Wed May  8 13:09:49 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="085c7951f95647b7bf0e50520a253107" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -18,9 +18,9 @@ This means code written to parse this file will need to be revisited each subseq
 </item>
 <item name="Java Command Handlers">
 <property name="AddSources" value="11" type="JavaHandler"/>
-<property name="SetTopNode" value="11" type="JavaHandler"/>
+<property name="SetTopNode" value="14" type="JavaHandler"/>
 <property name="ShowView" value="8" type="JavaHandler"/>
-<property name="SimulationRun" value="51" type="JavaHandler"/>
+<property name="SimulationRun" value="57" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
 <property name="AbstractSearchablePanel_SHOW_SEARCH" value="1" type="GuiHandlerData"/>
@@ -30,31 +30,32 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CmdMsgDialog_OPEN_MESSAGES_VIEW" value="8" type="GuiHandlerData"/>
 <property name="ConfirmSaveTextEditsDialog_NO" value="1" type="GuiHandlerData"/>
 <property name="CreateSrcFileDialog_FILE_NAME" value="10" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="338" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="60" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="364" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="67" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_FIT" value="10" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_IN" value="9" type="GuiHandlerData"/>
 <property name="MainMenuMgr_FILE" value="2" type="GuiHandlerData"/>
 <property name="MainMenuMgr_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="49" type="GuiHandlerData"/>
 <property name="PACommandNames_ADD_SOURCES" value="12" type="GuiHandlerData"/>
-<property name="PACommandNames_AUTO_UPDATE_HIER" value="9" type="GuiHandlerData"/>
-<property name="PACommandNames_SET_AS_TOP" value="11" type="GuiHandlerData"/>
-<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="51" type="GuiHandlerData"/>
-<property name="PAViews_CODE" value="54" type="GuiHandlerData"/>
+<property name="PACommandNames_AUTO_UPDATE_HIER" value="12" type="GuiHandlerData"/>
+<property name="PACommandNames_SET_AS_TOP" value="14" type="GuiHandlerData"/>
+<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="57" type="GuiHandlerData"/>
+<property name="PAViews_CODE" value="57" type="GuiHandlerData"/>
 <property name="PAViews_PROJECT_SUMMARY" value="1" type="GuiHandlerData"/>
-<property name="ProgressDialog_CANCEL" value="27" type="GuiHandlerData"/>
+<property name="ProgressDialog_CANCEL" value="31" type="GuiHandlerData"/>
 <property name="RDICommands_SAVE_FILE" value="30" type="GuiHandlerData"/>
-<property name="RDIViews_WAVEFORM_VIEWER" value="74" type="GuiHandlerData"/>
+<property name="RDIViews_WAVEFORM_VIEWER" value="78" type="GuiHandlerData"/>
 <property name="SaveProjectUtils_SAVE" value="5" type="GuiHandlerData"/>
 <property name="SrcChooserPanel_CREATE_FILE" value="10" type="GuiHandlerData"/>
-<property name="SrcMenu_IP_HIERARCHY" value="8" type="GuiHandlerData"/>
+<property name="SrcMenu_IP_HIERARCHY" value="12" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="1" type="GuiHandlerData"/>
 <property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="6" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="17" type="GuiMode"/>
+<property name="GuiMode" value="18" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="10" type="TclMode"/>
+<property name="TclMode" value="11" type="TclMode"/>
 </item>
 </section>
 </application>

@@ -21,7 +21,7 @@
 
 module common_bus_selection 
       (
-     input  [15:0] Non,AR_ST, PC, DR, AC, IR,TR, Memory,         
+     input  [15:0] None,AR, PC, DR, AC, IR,TR, Memory,         
      input  [2:0] Sel,       //sel0 ,sel1 ,sel2
      output [15:0] Common_bus );
     
@@ -30,8 +30,8 @@ module common_bus_selection
        for (i=0; i<16 ; i=i+1)
           begin 
        mux3x1 MUX_UQ(                   
-        .D0(Non[i]),
-        .D1(AR_ST[i]),
+        .D0(None[i]),
+        .D1(AR[i]),
         .D2(PC[i]),
         .D3(DR[i]),
         .D4(AC[i]),

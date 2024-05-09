@@ -22,7 +22,10 @@
 
 module Main_Design_tb;
 
-    // Inputs
+    // Parameters
+    parameter CLK_PERIOD = 10; // Clock period in ns
+
+    // Signals
     reg CLK;
     reg reset;
     reg en;
@@ -32,9 +35,8 @@ module Main_Design_tb;
     reg FGO;
     reg [7:0] INPR;
     reg [3:0] sc_output;
-    reg [6:0] T;
-    
-    // Outputs
+    reg [15:0] T;
+
     wire [11:0] AR;
     wire [11:0] PC;
     wire [11:0] SP;
@@ -45,9 +47,9 @@ module Main_Design_tb;
     wire [15:0] TR;
     wire [7:0] OUTR;
     wire E_flag;
-    wire [15:0] ALU_Odata;
-    
-    // Instantiate the design under test
+    wire [16:0] ALU_Odata;
+
+    // Instantiate the DUT
     Main_Design dut (
         .CLK(CLK),
         .reset(reset),
@@ -73,45 +75,31 @@ module Main_Design_tb;
     );
 
     // Clock generation
-    always begin
-        CLK = 0;
-        #5;
-        CLK = 1;
-        #5;
-    end
+    always #((CLK_PERIOD)/2) CLK = ~CLK;
 
-    // Stimulus generation
+    // Testbench stimulus
     initial begin
         // Initialize inputs
         reset = 1;
-        en = 0;
+        en = 1;
         R = 0;
         IEN = 0;
         FGI = 0;
         FGO = 0;
-        INPR = 8'b0;
-        sc_output = 4'b0;
-        T = 7'b0;
-        
+        INPR = 8'h00;
+        sc_output = 4'b0000;
+        T = 16'h0000;
+
         // Apply reset
-//        #10;
-//        reset = 0;
-//        #10;
-        
-//        // Enable module
-//        en = 1;
-//        #1000;
-        
+        #20 reset = 0;
+
         // Apply test vectors
-        
-        // End simulation
-//        #10;
-//        $finish;
+        // You can generate your test vectors here
+
+        #1000; // Simulate for some time
+//        $finish; // End simulation
     end
-    
-    // Monitor outputs
-//    always @(negedge CLK) begin
-//        // Add code to monitor outputs
-//    end
+
+    // Add any required monitoring or assertion code here
 
 endmodule
