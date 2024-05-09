@@ -23,7 +23,7 @@ module flags(
         input clk, D0,
         output reg E,
         input D1, T5,
-        inout LD
+        input LD
     );
         assign LD = ~(D1&T5);
         always@(posedge clk)

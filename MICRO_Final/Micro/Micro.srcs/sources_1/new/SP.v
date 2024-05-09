@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module SP( 
-input clk , input INR, input DEC ,
+input clk , input wire   INR , DEC ,
 input [11:0] reg_input,
 output reg [11:0] reg_output
     );

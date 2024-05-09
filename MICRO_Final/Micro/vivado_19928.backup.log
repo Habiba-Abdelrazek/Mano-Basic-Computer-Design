@@ -1,0 +1,2499 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May  8 23:36:03 2024
+# Process ID: 19928
+# Current directory: C:/Users/Abdullah/Micro-1/Micro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14068 C:\Users\Abdullah\Micro-1\Micro\Micro.xpr
+# Log file: C:/Users/Abdullah/Micro-1/Micro/vivado.log
+# Journal file: C:/Users/Abdullah/Micro-1/Micro\vivado.jou
+#----------------------------------------------------------ststart_guopen_project C:/Users/Abdullah/Micro-1/Micro/Micro.xpr
+Scanning sources...
+Finished scanning sources
+ININFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specifieINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 860.137 ; gain = 126.586
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 23:37:12 2024...
+n in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_vlog.prj"
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:28 . Memory (MB): peak = 873.789 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:28 . Memory (MB): peak = 873.789 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+update_compile_order -fileset sources_1
+set_property top Main_Design_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:91]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:92]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:93]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:134]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:135]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:136]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:152]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port DEC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:153]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:160]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port read [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:177]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port write [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:178]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:233]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 3 for port Sel [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:240]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:103]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:104]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:105]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:113]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:114]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:123]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:124]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:125]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:143]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:144]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:145]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:167]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 908.203 ; gain = 18.695
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:91]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:92]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:93]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:134]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:135]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:136]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:152]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port DEC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:153]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:160]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port read [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:177]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port write [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:178]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:233]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 3 for port Sel [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:240]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:103]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:104]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:105]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:113]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:114]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:123]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:124]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:125]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:143]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:144]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:145]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:167]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:91]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:92]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:93]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:134]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:135]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:136]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:152]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port DEC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:153]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:160]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port read [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:177]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port write [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:178]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:233]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 3 for port Sel [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:240]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:103]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:104]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:105]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:113]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:114]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:123]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:124]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:125]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:143]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:144]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:145]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:167]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:91]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:92]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:93]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:134]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:135]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:136]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:152]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port DEC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:153]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:160]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port read [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:177]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port write [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:178]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:233]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 3 for port Sel [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:240]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:103]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:104]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:105]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:113]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:114]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:123]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:124]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:125]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:143]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:144]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:145]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:167]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:92]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:93]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:94]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:135]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:136]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:137]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:153]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port DEC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:154]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:161]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port read [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:178]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port write [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:179]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:235]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 3 for port Sel [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:241]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:104]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:105]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:106]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:114]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:116]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:124]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:125]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:126]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:144]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:145]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:146]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:92]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:93]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:94]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:135]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:136]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:137]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:153]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port DEC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:154]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:161]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port read [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:178]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port write [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:179]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:235]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:104]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:105]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:106]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:114]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:116]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:124]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:125]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:126]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:144]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:145]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:146]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property top RAM_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top RAM [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim/xsim.dir/RAM_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May  8 23:55:10 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 950.113 ; gain = 10.164
+set_property top Main_Design [current_fileset]
+update_compile_order -fileset sources_1
+set_property top Main_Design_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_6
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:92]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:93]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:94]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:135]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:136]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:137]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:153]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port DEC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:154]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:161]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:235]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:104]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:105]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:106]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:114]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:116]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:124]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:125]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:126]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:144]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:145]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:146]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:92]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:93]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:94]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:135]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:136]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:137]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:153]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port DEC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:154]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:161]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:235]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:104]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:105]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:106]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:114]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:116]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:124]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:125]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:126]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:144]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:145]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:146]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run 10 us
+$finish called at time : 1090 ns : File "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" Line 288
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:92]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:93]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:94]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:135]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:136]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:137]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:153]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port DEC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:154]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:161]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:235]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:104]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:105]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:106]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:114]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:116]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:124]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:125]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:126]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:144]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:145]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:146]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:168]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property top RAM [current_fileset]
+update_compile_order -fileset sources_1
+set_property top RAM_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_7
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1memory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahmemory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 981.168 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahmemory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 981.168 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahmemory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 981.168 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahdataofmemory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 981.168 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahdataofmemory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+add_bp {C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v} 34
+remove_bps -file {C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v} -line 34
+add_bp {C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v} 34
+remove_bps -file {C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v} -line 34
+add_bp {C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v} 34
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" Line 34
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Stopped at time : 0 fs : File "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" Line 34
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+remove_bps -file {C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v} -line 34
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAM_tb_behav -key {Behavioral:sim_1:Functional:RAM_tb} -tclbatch {RAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source RAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1MicroMicro.srcssources_1
+ewdataofmemory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 983.996 ; gain = 0.465
+add_bp {C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v} 34
+remove_bps -file {C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v} -line 34
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RAM_tb_behav xil_defaultlib.RAM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-91] memory_locations is not declared [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v:46]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RAM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_tb
+ERROR: [VRFC 10-1346] second argument of $readmemh must be a memory [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v:46]
+ERROR: [VRFC 10-2787] module RAM_tb ignored due to previous errors [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/RAM_tb.v:24]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top Main_Design [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top Main_Design_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:92]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:93]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:94]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:135]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:136]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:137]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:153]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port DEC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:154]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:161]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:225]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:235]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port D [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:251]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_control.v:43]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net D is not permitted [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:227]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:104]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:105]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:106]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:114]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:116]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:124]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:125]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:126]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:144]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:145]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:146]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 1 for port LD [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:168]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 987.262 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:225]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:235]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port D [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:251]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_control.v:43]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:116]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1MicroMicro.srcssources_1
+ewdataofmemory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 987.262 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:225]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:235]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port D [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:251]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_control.v:43]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:116]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1MicroMicro.srcssources_1
+ewdataofmemory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1109.707 ; gain = 0.922
+set_property top common_bus_control [current_fileset]
+update_compile_order -fileset sources_1
+set_property top common_bus_control [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top common_bus_control_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'common_bus_control_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj common_bus_control_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/common_bus_control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot common_bus_control_tb_behav xil_defaultlib.common_bus_control_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_control.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.common_bus_control_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot common_bus_control_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "common_bus_control_tb_behav -key {Behavioral:sim_1:Functional:common_bus_control_tb} -tclbatch {common_bus_control_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source common_bus_control_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 250 ns : File "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/common_bus_control_tb.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'common_bus_control_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1121.102 ; gain = 7.238
+current_sim simulation_27
+update_compile_order -fileset sources_1
+current_sim simulation_28
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1123.109 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'common_bus_control_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj common_bus_control_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/common_bus_control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot common_bus_control_tb_behav xil_defaultlib.common_bus_control_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.common_bus_control_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot common_bus_control_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "common_bus_control_tb_behav -key {Behavioral:sim_1:Functional:common_bus_control_tb} -tclbatch {common_bus_control_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source common_bus_control_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 250 ns : File "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/common_bus_control_tb.v" Line 69
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'common_bus_control_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1123.562 ; gain = 0.453
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top Main_Design [current_fileset]
+update_compile_order -fileset sources_1
+set_property top Main_Design_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:225]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:235]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port D [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:251]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port inp [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:253]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:116]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1MicroMicro.srcssources_1
+ewdataofmemory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1123.621 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:225]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:235]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port D [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:251]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port inp [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:253]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:116]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Abdullah/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1MicroMicro.srcssources_1
+ewdataofmemory.txt referenced on C:/Users/Abdullah/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1123.621 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 01:48:33 2024...

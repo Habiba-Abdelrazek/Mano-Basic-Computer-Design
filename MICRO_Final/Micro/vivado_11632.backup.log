@@ -1,0 +1,127 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May  9 01:46:13 2024
+# Process ID: 11632
+# Current directory: D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent528 D:\Data second electric 2020-2021\second_electric sem_2\Micro-1\Micro\Micro.xpr
+# Log file: D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/vivado.log
+# Journal file: D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Abdullah/Micro-1/Micro' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 745.668 ; gain = 98.289
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:225]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:234]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:235]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port D [D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:251]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port inp [D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:253]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:115]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sim_1/new/Main_tb.v:116]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 773.797 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File C:UsersAbdullahMicro-1MicroMicro.srcssources_1
+ewdataofmemory.txt referenced on D:/Data second electric 2020-2021/second_electric sem_2/Micro-1/Micro/Micro.srcs/sources_1/new/RAM.v at line 34 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 795.422 ; gain = 19.406
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 795.422 ; gain = 22.043
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 814.816 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 10:13:56 2024...

@@ -3,7 +3,7 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f826bf47a9ac4a5d9408bc6fba97eff0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port OUTR [E:/1Module_Code/1module/project_11.srcs/sim_1/new/tb.v:38]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port OUTR [D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/1module_code/project_11.srcs/sim_1/new/tb.v:38]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

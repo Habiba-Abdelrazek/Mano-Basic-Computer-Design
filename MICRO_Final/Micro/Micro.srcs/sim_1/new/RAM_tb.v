@@ -51,24 +51,17 @@ module RAM_tb(
        DataIn_tb=0;
        
        
-       #10 write_tb=0;
-       #10 read_tb=1;
-       
-       #10 address_tb=1;
-       #10 address_tb=2;
-       #10 address_tb=3;
-       #10 address_tb=4;
-       
        forever begin
-       #10 address_tb=1; write_tb=1; read_tb=0; DataIn_tb=16'h1234;
-       #10 address_tb=2;          DataIn_tb=16'h3334;
-       #10 address_tb=1;          DataIn_tb=16'h0034;
-       #10 address_tb=1;          DataIn_tb=16'hFF45;
-       
-       #10 address_tb=1; read_tb=1; write_tb=0;
-       #10 address_tb=2;
-       #10 address_tb=3;
-       #10 address_tb=4;
+       write_tb=1; read_tb=0;
+       #10 address_tb=12'h001;        write_tb=1; read_tb=0;  DataIn_tb=16'h1234;
+       #10 address_tb=12'h002;          DataIn_tb=16'h3334;
+       #10 address_tb=12'h003;          DataIn_tb=16'h0034;
+       #10 address_tb=12'h004;          DataIn_tb=16'hFF45;
+
+       #10 address_tb=12'h005;        read_tb=1; write_tb=0;
+       #10 address_tb=12'h006;
+       #10 address_tb=12'h007;
+       #10 address_tb=12'h008;
 
        end
        

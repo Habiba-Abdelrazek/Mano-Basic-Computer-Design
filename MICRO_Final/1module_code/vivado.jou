@@ -2,24 +2,16 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu May  9 13:46:56 2024
-# Process ID: 16148
-# Current directory: E:/1Module_Code/1module
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2932 E:\1Module_Code\1module\project_11.xpr
-# Log file: E:/1Module_Code/1module/vivado.log
-# Journal file: E:/1Module_Code/1module\vivado.jou
+# Start of session at: Fri May 10 02:12:14 2024
+# Process ID: 12808
+# Current directory: D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/1module_code
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10668 D:\Data second electric 2020-2021\second_electric sem_2\micro\MICRO_Final\1module_code\project_11.xpr
+# Log file: D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/1module_code/vivado.log
+# Journal file: D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/1module_code\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project E:/1Module_Code/1module/project_11.xpr
+open_project {D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/1module_code/project_11.xpr}
 update_compile_order -fileset sources_1
 launch_simulation
 source tb.tcl
 close_sim
-launch_simulation
-source tb.tcl
-close_sim
-launch_simulation
-source tb.tcl
-close_sim
-launch_simulation
-source tb.tcl

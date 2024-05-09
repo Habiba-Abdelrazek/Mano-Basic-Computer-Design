@@ -24,17 +24,21 @@ module control(
     input clk,
     input [15:0]T, input [7:0]D ,
   /////  input J ,
+  
+  //// here they must be output not input but there will be an error
     input [11:0]IR,
-    output PC_LD , PC_INR , PC_CLR,
-    output AR_LD , AR_INR , AR_CLR,
-    output DR_LD , DR_INR , DR_CLR,
-    output AC_LD , AC_INR , AC_CLR,
-    output IR_LD,
-    output TR_LD , TR_INR , TR_CLR,
-    output SP_INR , SP_DEC,
-    output OUTR_LD,
-    output SC_CLR,
-    output mem_read , mem_write);
+    input wire  PC_LD , PC_INR , PC_CLR,
+    input  wire AR_LD , AR_INR , AR_CLR,
+    input  wire DR_LD , DR_INR , DR_CLR,
+    input wire AC_LD , AC_INR , AC_CLR,
+    input  wire IR_LD,
+    input  wire TR_LD , TR_INR , TR_CLR,
+    input  wire SP_INR , SP_DEC,
+    input  wire OUTR_LD,
+    input  wire SC_CLR,
+    input wire mem_read , wire mem_write
+    
+    );
     
 //        wire [11:0]B = IR[15:0];
 

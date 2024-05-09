@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 10 00:26:24 2024
+# Process ID: 2220
+# Current directory: E:/Micro-Abdallah/Micro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13216 E:\Micro-Abdallah\Micro\Micro.xpr
+# Log file: E:/Micro-Abdallah/Micro/vivado.log
+# Journal file: E:/Micro-Abdallah/Micro\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Micro-Abdallah/Micro/Micro.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Main_Design_tb.tcl
+close_sim
+launch_simulation
+source Main_Design_tb.tcl
+close_sim
+launch_simulation
+source Main_Design_tb.tcl
+close_sim
+launch_simulation
+source Main_Design_tb.tcl
+close_sim
+launch_simulation
+source Main_Design_tb.tcl
+close_sim
+launch_simulation
+source Main_Design_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Main_Design_tb.tcl

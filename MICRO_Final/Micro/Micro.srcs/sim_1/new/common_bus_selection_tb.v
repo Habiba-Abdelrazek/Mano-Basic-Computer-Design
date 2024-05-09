@@ -23,7 +23,7 @@
 module common_bus_selection_tb;
 
    // Inputs
-   reg [15:0] Non, AR_ST, PC, DR, AC, IR, TR, Memory;
+   reg [15:0] None, AR, PC, DR, AC, IR, TR, Memory;
    reg [2:0] Sel;
    
    // Output
@@ -31,8 +31,8 @@ module common_bus_selection_tb;
    
    // Instantiate the module under test
    common_bus_selection bb(
-      .Non(Non),
-      .AR_ST(AR_ST),
+      .None(None),
+      .AR(AR),
       .PC(PC),
       .DR(DR),
       .AC(AC),
@@ -46,8 +46,8 @@ module common_bus_selection_tb;
    // Stimulus
    initial begin
       // Assign input values
-      Non = 16'b0101010101010101;
-      AR_ST = 16'b0011001100110011;
+      None = 16'h0000;
+      AR = 16'b0011001100110011;
       PC = 16'b1111000011110000;
       DR = 16'b0000111100001111;
       AC = 16'b1100110011001100;
@@ -59,8 +59,8 @@ module common_bus_selection_tb;
       // Wait for some time to observe the outputs
       #10;
       
-     Non = 16'b0101010101010101;
-          AR_ST = 16'b0011001100110011;
+     None = 16'b0000;
+          AR = 16'b0011001100110011;
           PC = 16'b1111000011110000;
           DR = 16'b0000111100001111;
           AC = 16'b1100110011001100;

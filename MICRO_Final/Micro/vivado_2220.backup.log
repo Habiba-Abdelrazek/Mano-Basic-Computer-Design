@@ -1,0 +1,813 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 10 00:26:24 2024
+# Process ID: 2220
+# Current directory: E:/Micro-Abdallah/Micro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13216 E:\Micro-Abdallah\Micro\Micro.xpr
+# Log file: E:/Micro-Abdallah/Micro/vivado.log
+# Journal file: E:/Micro-Abdallah/Micro\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Micro-Abdallah/Micro/Micro.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 827.801 ; gain = 100.559
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:151]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:242]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:251]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:252]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port D [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:268]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port inp [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:270]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:129]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:160]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 8 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:182]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:45]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 856.418 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file E:/1Module_Code/dataofmemory.txt
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 875.895 ; gain = 19.477
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 875.895 ; gain = 19.477
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:151]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:242]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:251]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:252]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port D [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:268]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port inp [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:270]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:129]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:160]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 8 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:182]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:45]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 902.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file E:/1Module_Code/dataofmemory.txt
+$finish called at time : 1 us : File "E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v" Line 318
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 902.414 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:151]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:242]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:251]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:252]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port D [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:268]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port inp [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:270]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:129]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:160]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 8 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:182]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:45]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 902.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file E:/1Module_Code/dataofmemory.txt
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 902.414 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:151]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:242]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:251]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:252]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port D [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:268]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port inp [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:270]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:129]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:160]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 8 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:182]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:45]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 902.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file E:/1Module_Code/dataofmemory.txt
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 902.414 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:151]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:242]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:253]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:254]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port D [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:270]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port inp [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:272]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:129]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:160]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 8 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:182]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:45]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 902.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file E:/1Module_Code/dataofmemory.txt
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 902.414 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:151]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:242]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:253]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:254]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port D [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:270]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port inp [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:272]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:129]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:160]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 8 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:182]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:45]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 902.414 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file E:/1Module_Code/dataofmemory.txt
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 902.730 ; gain = 0.316
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:149]
+WARNING: [VRFC 10-278] actual bit length 17 differs from formal bit length 16 for port data [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:213]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:240]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:250]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:251]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port D [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:267]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port inp [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:269]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net TR_Idata is not permitted [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:215]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:126]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:127]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:158]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 8 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:180]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:45]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:49]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 904.867 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Main_Design_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Main_Design_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/3x8decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3x8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/Eflag.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/SP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/common_bus_selection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module common_bus_selection
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/decoder4x16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder4x16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder8x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_12bit
+WARNING: [VRFC 10-2096] empty statement in sequential block [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_12bit.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_16bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_16bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/register_8bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Design_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 2cb5f173c53248beab9782d16e3b5ae3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Main_Design_tb_behav xil_defaultlib.Main_Design_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:150]
+WARNING: [VRFC 10-278] actual bit length 17 differs from formal bit length 16 for port data [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:214]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:241]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port AR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:251]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 16 for port PC [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:252]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port D [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:268]
+WARNING: [VRFC 10-278] actual bit length 12 differs from formal bit length 8 for port inp [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:270]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port CLR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:127]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port INR [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:128]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 12 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:159]
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 8 for port reg_input [E:/Micro-Abdallah/Micro/Micro.srcs/sim_1/new/Main_tb.v:181]
+WARNING: [VRFC 10-1783] select index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:45]
+WARNING: [VRFC 10-597] element index 15 into IR is out of bounds [E:/Micro-Abdallah/Micro/Micro.srcs/sources_1/new/control.v:49]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SC
+Compiling module xil_defaultlib.decoder4x16
+Compiling module xil_defaultlib.register_16bit
+Compiling module xil_defaultlib.register_12bit
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.register_8bit
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.flags
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.decoder3x8
+Compiling module xil_defaultlib.mux3x1
+Compiling module xil_defaultlib.common_bus_selection_default
+Compiling module xil_defaultlib.common_bus_control
+Compiling module xil_defaultlib.encoder8x3
+Compiling module xil_defaultlib.Main_Design_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Main_Design_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 904.867 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Micro-Abdallah/Micro/Micro.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Main_Design_tb_behav -key {Behavioral:sim_1:Functional:Main_Design_tb} -tclbatch {Main_Design_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Main_Design_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file E:/1Module_Code/dataofmemory.txt
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Main_Design_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 908.039 ; gain = 3.172

@@ -21,7 +21,7 @@
 
 
 module register_8bit( 
-input clk, input LD , input [7:0] reg_input,
+input clk, input wire LD , input [7:0] reg_input,
 output reg [7:0] reg_output
     );
     always @(posedge clk) begin

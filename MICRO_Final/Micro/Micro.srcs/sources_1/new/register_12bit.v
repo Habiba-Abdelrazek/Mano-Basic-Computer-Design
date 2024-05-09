@@ -21,7 +21,7 @@
 
 
 module register_12bit( 
-input clk,input LD ,input CLR , input INR , input [11:0] reg_input,
+input clk,input  wire  LD , CLR , INR, input [11:0] reg_input,
 output reg [11:0] reg_output
     );
     always @(posedge clk) begin

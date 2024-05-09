@@ -21,18 +21,18 @@
 
 
 module timing(
-//    input [3:0] sc_output,
+   //// input [3:0] sc_output,
     input reset, clk, en,
     output [15:0] T
 );
-
     wire clr;
     wire [3:0] sc_output;
-    
     assign clr = reset | T[6];
 
-    SC inputs(
-        .out(sc_output)
+ /*   SC inputs(
+        .out(sc_output),
+        .clr(reset),
+        .en(en)
     );
 
     decoder4x16 signals(
@@ -40,6 +40,6 @@ module timing(
         .outp(T)
     );
 
-
+*/
 endmodule
 

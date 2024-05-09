@@ -1,3 +1,3 @@
 Vivado Simulator 2018.2
 Time resolution is 1 ps
-$finish called at time : 250 ns : File "D:/Data second electric 2020-2021/second_electric sem_2/micro/MICRO_Final/Micro/Micro.srcs/sim_1/new/common_bus_control_tb.v" Line 69
+WARNING: Too many words specified in data file E:/1Module_Code/dataofmemory.txt

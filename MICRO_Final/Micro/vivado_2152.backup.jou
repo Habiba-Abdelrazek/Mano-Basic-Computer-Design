@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May  9 10:43:35 2024
+# Process ID: 2152
+# Current directory: E:/Micro-Abdallah/Micro
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14344 E:\Micro-Abdallah\Micro\Micro.xpr
+# Log file: E:/Micro-Abdallah/Micro/vivado.log
+# Journal file: E:/Micro-Abdallah/Micro\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Micro-Abdallah/Micro/Micro.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Main_Design_tb.tcl
+close_sim
+launch_simulation
+source Main_Design_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+source Main_Design_tb.tcl
+close_sim
+launch_simulation
+source Main_Design_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top RAM_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source RAM_tb.tcl
+close_sim
+launch_simulation
+source RAM_tb.tcl
+close_sim
+launch_simulation
+source RAM_tb.tcl
+close_sim
+launch_simulation
+source RAM_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Main_Design_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_sim simulation_4
+close_sim
+launch_simulation

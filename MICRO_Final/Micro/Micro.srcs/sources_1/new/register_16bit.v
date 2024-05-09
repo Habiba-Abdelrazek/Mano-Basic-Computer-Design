@@ -22,7 +22,7 @@
 
 
 module register_16bit( 
-input clk,input LD ,input CLR , input INR , input [15:0] reg_input,
+input clk,input  wire  LD , CLR , INR , input [15:0] reg_input,
 output reg [15:0] reg_output
     );
     always @(posedge clk) begin
@@ -31,7 +31,7 @@ output reg [15:0] reg_output
        end
        
        else if(!CLR) begin
-          reg_output <= 16'h0000;;
+          reg_output <= 16'h0000;
        end
        
        else if(INR) begin

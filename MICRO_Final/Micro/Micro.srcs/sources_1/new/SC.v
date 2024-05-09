@@ -28,12 +28,17 @@ module SC (
     output reg[3:0] out);
     //////////assign en =1;
      initial begin
-        out = 0;
+        out = 4'b0000;
      end
-     always @ (posedge clk , posedge clr ) begin
+     always @ (posedge clk  ) begin
+    
+    
+        
      if (en)
-         out = out;
+          out = out + 1;
+     else if(clr)
+         out = 4'b0000;
      else
-         out = out + 1;
+         out = out;
      end
 endmodule

@@ -20,8 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module timing_tb;
 
-    // Define parameters
-    parameter CLK_PERIOD = 10; // Clock period in time units
+ 
 
     // Declare signals
     reg clk = 0;
@@ -48,10 +47,12 @@ module timing_tb;
     );
 
     // Clock generation
-    always #((CLK_PERIOD / 2)) clk = ~clk;
+    always begin
+          #5 clk = ~clk;
+      end
     // Test stimulus
     initial begin
-        #20; Sen = 0;
+       
         #20 ;Sen =1;
 
 
